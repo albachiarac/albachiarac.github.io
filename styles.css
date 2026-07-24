@@ -22,6 +22,13 @@ body {
   font-size: 0.5rem;
   color: #666;
 }
+.orcid-link {
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+.orcid-link:hover {
+  text-decoration: underline;
+}
 .site {
   width: min(calc(100% - 48px), var(--page-width));
   margin: 44px auto 70px;
