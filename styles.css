@@ -1,0 +1,80 @@
+/* Shared style for all pages */
+:root {
+  --page-width: 950px;
+  --text: #111;
+  --muted: #555;
+  --link: #0645ad;
+  --line: #aaa;
+}
+* { box-sizing: border-box; }
+html { overflow-y: scroll; }
+body {
+  margin: 0;
+  color: var(--text);
+  background: #fff;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 19px;
+  line-height: 1.55;
+}
+.site {
+  width: min(calc(100% - 48px), var(--page-width));
+  margin: 44px auto 70px;
+}
+.site-header { text-align: center; }
+.site-name {
+  margin: 0;
+  font-size: clamp(2.2rem, 7vw, 4rem);
+  line-height: 1.05;
+  font-weight: 700;
+}
+.site-name a { color: inherit; text-decoration: none; }
+.profile-picture {
+  display: block;
+  width: min(310px, 75vw);
+  aspect-ratio: 1;
+  margin: 30px auto;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.main-navigation {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px 24px;
+  margin: 36px 0 48px;
+  padding: 15px 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+.main-navigation a { color: var(--text); text-decoration: none; }
+.main-navigation a:hover,
+.main-navigation a:focus { color: var(--link); text-decoration: underline; }
+.main-navigation a[aria-current="page"] {
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+main { max-width: 880px; margin: 0 auto; }
+h1, h2 { line-height: 1.2; }
+.page-title { margin: 0 0 36px; font-size: clamp(1.9rem, 5vw, 2.8rem); }
+h1:not(.page-title) { margin: 48px 0 18px; font-size: 1.55rem; }
+h2 { margin: 46px 0 18px; font-size: 1.4rem; }
+p { margin: 0 0 22px; }
+a { color: var(--link); text-underline-offset: 3px; }
+ul, ol { padding-left: 1.7em; }
+li { margin-bottom: 20px; }
+.compact-list li { margin-bottom: 9px; }
+.site-footer {
+  max-width: 880px;
+  margin: 65px auto 0;
+  padding-top: 20px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: .85rem;
+  text-align: center;
+}
+@media (max-width: 640px) {
+  body { font-size: 17px; }
+  .site { width: min(calc(100% - 30px), var(--page-width)); margin-top: 28px; }
+  .main-navigation { justify-content: flex-start; gap: 9px 18px; margin-bottom: 38px; }
+}

@@ -1,0 +1,13 @@
+FILE MAP — each filename and its role
+
+index.html                         Home page: biography, research interests, contact
+publications-and-preprints.html    Publications and preprints page
+invited-talks.html                 Invited talks page
+teaching.html                      Teaching page
+academic-service.html              Academic/professional service page
+outreach.html                      Outreach page
+styles.css                         Shared design used by every HTML page
+assets/profile-placeholder.svg     Temporary profile-picture placeholder
+documents/                         Folder for CV, slides, handouts, and PDFs
+.nojekyll                          Makes GitHub Pages serve this as a plain static site
+README.md                          Setup and editing instructions
