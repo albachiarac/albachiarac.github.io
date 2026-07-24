@@ -22,6 +22,17 @@ body {
   font-size: 0.5rem;
   color: #666;
 }
+.name-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.site-name {
+  margin: 0;
+}
+
 .orcid-icon {
   display: inline-flex;
   flex-shrink: 0;
@@ -29,12 +40,8 @@ body {
 
 .orcid-icon img {
   display: block;
-  width: 20px;
-  height: 20px;
-}
-
-.orcid-icon:hover {
-  opacity: 0.75;
+  width: 22px;
+  height: 22px;
 }
 .site {
   width: min(calc(100% - 48px), var(--page-width));
