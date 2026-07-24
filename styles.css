@@ -16,6 +16,11 @@ body {
   font-size: 19px;
   line-height: 1.55;
 }
+.profile figcaption {
+  margin-top: 4px;
+  font-size: 0.7rem;
+  color: #666;
+}
 .site {
   width: min(calc(100% - 48px), var(--page-width));
   margin: 44px auto 70px;
