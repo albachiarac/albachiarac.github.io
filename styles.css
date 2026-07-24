@@ -33,15 +33,15 @@ body {
   margin: 0;
 }
 
-.orcid-icon {
-  display: inline-flex;
-  flex-shrink: 0;
+.orcid-text {
+  color: #a6ce39;
+  font-weight: 600;
+  text-decoration: none;
 }
 
-.orcid-icon img {
-  width: 62px;
-  height: 62px;
-  object-fit: contain;
+.orcid-text:hover,
+.orcid-text:focus {
+  text-decoration: underline;
 }
 .site {
   width: min(calc(100% - 48px), var(--page-width));
