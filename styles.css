@@ -22,12 +22,19 @@ body {
   font-size: 0.5rem;
   color: #666;
 }
-.orcid-link {
-  font-size: 0.9rem;
-  text-decoration: none;
+.orcid-icon {
+  display: inline-flex;
+  flex-shrink: 0;
 }
-.orcid-link:hover {
-  text-decoration: underline;
+
+.orcid-icon img {
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+
+.orcid-icon:hover {
+  opacity: 0.75;
 }
 .site {
   width: min(calc(100% - 48px), var(--page-width));
