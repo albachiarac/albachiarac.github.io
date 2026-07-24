@@ -39,9 +39,9 @@ body {
 }
 
 .orcid-icon img {
-  display: block;
   width: 22px;
   height: 22px;
+  object-fit: contain;
 }
 .site {
   width: min(calc(100% - 48px), var(--page-width));
