@@ -144,6 +144,14 @@ p {
   margin: 0 0 1.4rem;
 }
 
+.publication-list {
+  font-size: 0.9rem;
+  line-height: 1.55;
+}
+
+.publication-list li {
+  margin-bottom: 0.85rem;
+}
 
 
 h1,
