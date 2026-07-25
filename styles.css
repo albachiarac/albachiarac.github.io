@@ -200,7 +200,7 @@ a:focus-visible {
 
 .profile-picture {
   display: block;
-  width: min(310px, 75vw);
+  width: min(290px, 75vw);
   aspect-ratio: 1;
   margin: 30px auto;
   border-radius: 50%;
