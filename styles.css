@@ -100,6 +100,24 @@ li { margin-bottom: 20px; }
   font-size: .85rem;
   text-align: center;
 }
+.site-name .orcid-text {
+  display: inline-block;
+  margin-left: 8px;
+
+  color: #a6ce39;
+  font-family: Arial, sans-serif;
+  font-size: 0.35em;
+  font-weight: 600;
+  letter-spacing: 0;
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+.site-name .orcid-text:hover,
+.site-name .orcid-text:focus {
+  color: #769c20;
+  text-decoration: underline;
+}
 @media (max-width: 640px) {
   body { font-size: 17px; }
   .site { width: min(calc(100% - 30px), var(--page-width)); margin-top: 28px; }
