@@ -234,7 +234,7 @@ a:focus-visible {
   object-fit: cover;
 
   /* Keeps different photographs visually coherent */
-  filter: grayscale(20%) saturate(75%) contrast(95%);
+  filter: grayscale(2%) saturate(95%) contrast(95%);
 }
 
 /* Darkens only the lower part, behind the title */
