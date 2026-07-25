@@ -92,7 +92,7 @@ body {
 
 .site-name .orcid-text {
   display: inline-block;
-  margin-left: 0.6rem;
+  margin-left: 1rem;
 
   color: var(--muted);
   font-family:
@@ -108,6 +108,7 @@ body {
   text-transform: uppercase;
   vertical-align: middle;
 }
+
 
 .site-name .orcid-text:hover,
 .site-name .orcid-text:focus {
