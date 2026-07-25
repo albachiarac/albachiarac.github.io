@@ -1,122 +1,279 @@
 /* Shared style for all pages */
+/* Minimal editorial style */
+
 :root {
-  --page-width: 950px;
-  --text: #111;
-  --muted: #555;
-  --link: #0645ad;
-  --line: #aaa;
+  --page-width: 900px;
+  --content-width: 740px;
+
+  --background: #fbfaf7;
+  --text: #262521;
+  --muted: #716d65;
+  --link: #743447;
+  --line: #ddd9d1;
 }
-* { box-sizing: border-box; }
-html { overflow-y: scroll; }
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  overflow-y: scroll;
+}
+
 body {
   margin: 0;
   color: var(--text);
-  background: #fff;
-  font-family: "Courier New", Courier, monospace;
-  font-size: 19px;
-  line-height: 1.55;
-}
-.profile figcaption {
-  margin-top: 4px;
-  text-align: center;
-  font-size: 0.5rem;
-  color: #666;
-}
-.name-row {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
+  background: var(--background);
+
+  font-family:
+    ui-serif,
+    Georgia,
+    Cambria,
+    "Times New Roman",
+    serif;
+
+  font-size: 18px;
+  line-height: 1.68;
 }
 
-.site-name {
-  margin: 0;
-}
-
-.orcid-text {
-  color: #a6ce39;
-  font-weight: 600;
-  text-decoration: none;
-}
-
-.orcid-text:hover,
-.orcid-text:focus {
-  text-decoration: underline;
-}
 .site {
   width: min(calc(100% - 48px), var(--page-width));
-  margin: 44px auto 70px;
+  margin: 38px auto 68px;
 }
-.site-header { text-align: center; }
-.site-name {
-  margin: 0;
-  font-size: clamp(2.2rem, 7vw, 4rem);
-  line-height: 1.05;
-  font-weight: 700;
-}
-.site-name a { color: inherit; text-decoration: none; }
-.profile-picture {
-  display: block;
-  width: min(310px, 75vw);
-  aspect-ratio: 1;
-  margin: 30px auto;
-  border-radius: 50%;
-  object-fit: cover;
-}
-.main-navigation {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 8px 24px;
-  margin: 36px 0 48px;
-  padding: 15px 0;
-  border-top: 1px solid var(--line);
-  border-bottom: 1px solid var(--line);
-}
-.main-navigation a { color: var(--text); text-decoration: none; }
-.main-navigation a:hover,
-.main-navigation a:focus { color: var(--link); text-decoration: underline; }
-.main-navigation a[aria-current="page"] {
-  font-weight: 700;
-  text-decoration: underline;
-  text-underline-offset: 4px;
-}
-main { max-width: 880px; margin: 0 auto; }
-h1, h2 { line-height: 1.2; }
-.page-title { margin: 0 0 36px; font-size: clamp(1.9rem, 5vw, 2.8rem); }
-h1:not(.page-title) { margin: 48px 0 18px; font-size: 1.55rem; }
-h2 { margin: 46px 0 18px; font-size: 1.4rem; }
-p { margin: 0 0 22px; }
-a { color: var(--link); text-underline-offset: 3px; }
-ul, ol { padding-left: 1.7em; }
-li { margin-bottom: 20px; }
-.compact-list li { margin-bottom: 9px; }
-.site-footer {
-  max-width: 880px;
-  margin: 65px auto 0;
-  padding-top: 20px;
-  border-top: 1px solid var(--line);
-  color: var(--muted);
-  font-size: .85rem;
+
+/* Header */
+
+.site-header {
   text-align: center;
 }
+
+.site-name {
+  margin: 0;
+
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+
+  font-size: clamp(2.3rem, 6vw, 3.5rem);
+  font-weight: 650;
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+}
+
+.site-name a {
+  color: inherit;
+  text-decoration: none;
+}
+
 .site-name .orcid-text {
   display: inline-block;
-  margin-left: 8px;
+  margin-left: 0.6rem;
 
-  color: #a6ce39;
-  font-family: Arial, sans-serif;
-  font-size: 0.25em;
+  color: var(--muted);
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+
+  font-size: 0.23em;
   font-weight: 600;
-  letter-spacing: 0;
-  text-decoration: none;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
   vertical-align: middle;
 }
 
 .site-name .orcid-text:hover,
 .site-name .orcid-text:focus {
-  color: #769c20;
+  color: var(--link);
+}
+
+/* Navigation */
+
+.main-navigation {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px 26px;
+
+  margin: 28px 0 52px;
+  padding: 13px 0;
+
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+
+  font-size: 0.9rem;
+}
+
+.main-navigation a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.main-navigation a:hover,
+.main-navigation a:focus {
+  color: var(--link);
+}
+
+.main-navigation a[aria-current="page"] {
+  color: var(--link);
   text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 5px;
+}
+
+/* Main content */
+
+main {
+  max-width: var(--content-width);
+  margin: 0 auto;
+}
+
+p {
+  margin: 0 0 1.4rem;
+}
+
+h1,
+h2 {
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+
+  font-weight: 650;
+  line-height: 1.2;
+  letter-spacing: -0.025em;
+}
+
+.page-title {
+  margin: 0 0 2.5rem;
+  font-size: clamp(1.9rem, 5vw, 2.6rem);
+}
+
+h1:not(.page-title) {
+  margin: 3.5rem 0 1rem;
+  font-size: 1.4rem;
+}
+
+h2 {
+  margin: 3.2rem 0 1rem;
+  font-size: 1.3rem;
+}
+
+/* Links */
+
+a {
+  color: var(--link);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+a:focus-visible {
+  outline: 2px solid var(--link);
+  outline-offset: 4px;
+  border-radius: 2px;
+}
+
+/* Portrait */
+
+.profile {
+  margin: 0 0 2.8rem;
+}
+
+.profile-picture {
+  display: block;
+  width: min(245px, 70vw);
+  height: auto;
+  margin: 0 auto 10px;
+
+  border: 1px solid var(--line);
+  border-radius: 10px;
+}
+
+.profile figcaption {
+  max-width: 320px;
+  margin: 0 auto;
+
+  color: var(--muted);
+  font-size: 0.7rem;
+  line-height: 1.4;
+  text-align: center;
+}
+
+/* Lists */
+
+ul,
+ol {
+  padding-left: 1.5em;
+}
+
+li {
+  margin-bottom: 1rem;
+}
+
+li::marker {
+  color: var(--muted);
+}
+
+.compact-list li {
+  margin-bottom: 0.55rem;
+}
+
+/* Footer */
+
+.site-footer {
+  max-width: var(--content-width);
+  margin: 4.5rem auto 0;
+  padding-top: 1.2rem;
+
+  border-top: 1px solid var(--line);
+
+  color: var(--muted);
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+/* Mobile */
+
+@media (max-width: 640px) {
+  body {
+    font-size: 17px;
+  }
+
+  .site {
+    width: min(calc(100% - 30px), var(--page-width));
+    margin-top: 26px;
+  }
+
+  .site-name .orcid-text {
+    display: block;
+    width: max-content;
+    margin: 0.8rem auto 0;
+    font-size: 0.65rem;
+  }
+
+  .main-navigation {
+    justify-content: flex-start;
+    gap: 10px 18px;
+    margin-bottom: 40px;
+  }
 }
 @media (max-width: 640px) {
   body { font-size: 17px; }
