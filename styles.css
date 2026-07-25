@@ -117,14 +117,15 @@ body {
 
 /* Navigation */
 
+
 .main-navigation {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 10px 26px;
+  gap: 12px 38px;
 
-  margin: 28px 0 52px;
-  padding: 13px 0;
+  margin: j34px 0 52px;
+  padding: 15px 0;
 
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
@@ -142,6 +143,7 @@ body {
 .main-navigation a {
   color: var(--text);
   text-decoration: none;
+  padding: 3px 5px;
 }
 
 .main-navigation a:hover,
