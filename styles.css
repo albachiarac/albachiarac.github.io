@@ -144,6 +144,8 @@ p {
   margin: 0 0 1.4rem;
 }
 
+
+
 h1,
 h2 {
   font-family:
@@ -164,13 +166,13 @@ h2 {
 }
 
 h1:not(.page-title) {
-  margin: 3.5rem 0 1rem;
-  font-size: 1.4rem;
+  margin: 3rem 0 0.8rem;
+  font-size: 1.25rem;
 }
 
 h2 {
-  margin: 3.2rem 0 1rem;
-  font-size: 1.3rem;
+  margin: 2.8rem 0 0.8rem;
+  font-size: 1.15rem;
 }
 
 /* Links */
