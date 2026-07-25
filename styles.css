@@ -28,10 +28,7 @@ a:focus {
   color: var(--link);
 }
 
-.site-name .orcid-text:hover,
-.site-name .orcid-text:focus {
-  color: var(--link);
-}
+
 
 li::marker {
   color: var(--link);
@@ -92,7 +89,7 @@ body {
 
 .site-name .orcid-text {
   display: inline-block;
-  margin-left: 1rem;
+  margin-left: 0.7rem;
 
   color: var(--muted);
   font-family:
@@ -125,6 +122,7 @@ body {
   flex-wrap: wrap;
   gap: 12px 38px;
 
+  margin-top: 36px;
   margin: j34px 0 52px;
   padding: 15px 0;
 
