@@ -8,8 +8,37 @@
   --background: #fbfaf7;
   --text: #262521;
   --muted: #716d65;
-  --link: #743447;
+
+  --link: #00728D;       /* SNS petrol blue */
+  --link-hover: #183F56; /* SNS dark blue */
+
   --line: #ddd9d1;
+}
+
+a {
+  color: var(--link);
+}
+
+a:hover,
+a:focus {
+  color: var(--link-hover);
+}
+
+.main-navigation a[aria-current="page"] {
+  color: var(--link);
+}
+
+.site-name .orcid-text:hover,
+.site-name .orcid-text:focus {
+  color: var(--link);
+}
+
+li::marker {
+  color: var(--link);
+}
+
+a:focus-visible {
+  outline-color: var(--link);
 }
 
 * {
