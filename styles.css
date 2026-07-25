@@ -58,7 +58,7 @@ body {
     "Times New Roman",
     serif;
 
-  font-size: 17px;
+  font-size: 16px;
   line-height: 1.67;
 }
 
@@ -75,7 +75,7 @@ body {
 
 .site-name {
   margin: 0;
-  font-size: clamp(1.9rem, 4.8vw, 2.5rem);
+  font-size: clamp(1.7rem, 4.6vw, 2.3rem);
   font-weight: 650;
   line-height: 1.05;
   letter-spacing: -0.04em;
@@ -130,7 +130,7 @@ body {
   border-bottom: 1px solid var(--line);
 
   
-  font-size: 0.9rem;
+  font-size: 0.95rem;
 }
 
 .main-navigation a {
@@ -196,7 +196,7 @@ h2 {
 
 .page-title {
   margin: 0 0 2rem;
-  font-size: clamp(1.6rem, 4vw, 2.1rem);
+  font-size: clamp(1.4rem, 3.8vw, 2rem);
 }
 
 h1:not(.page-title) {
