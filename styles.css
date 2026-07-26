@@ -178,10 +178,9 @@ p {
   padding-left: 0;
 }
 
-
-h1,
-h2 {
-  font-weight: 650;
+h1, h2 {
+  font-family: inherit;
+  font-weight: 500;
   line-height: 1.2;
   letter-spacing: -0.025em;
 }
