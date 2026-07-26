@@ -372,9 +372,11 @@ li::marker {
   }
 
   .main-navigation {
-    justify-content: flex-start;
-    gap: 10px 20px;
-    margin-bottom: 28px;
+    justify-content: center;
+    gap: 9px 18px;
+    font-size: 0.9rem;
+    text-align: center;
   }
 }
+
 
