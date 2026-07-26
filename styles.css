@@ -184,6 +184,18 @@ p {
   white-space: nowrap;
 }
 
+
+.profile-links {
+  margin: 0.65rem 0 0;
+  color: var(--muted);
+  font-size: 0.78rem;
+}
+
+.profile-links a {
+  color: inherit;
+  text-underline-offset: 3px;
+}
+
 h1, h2 {
   font-family: inherit;
   font-weight: 590;
