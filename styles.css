@@ -172,7 +172,7 @@ p {
 }
 
 .small {
-  font-size: 0.88rem;
+  font-size: 0.9rem;
   line-height: 1.55;
   margin-left: 0;
   padding-left: 0;
@@ -359,7 +359,7 @@ li::marker {
 
 @media (max-width: 640px) {
   body {
-    font-size: 17px;
+    font-size: 16px;
   }
 
   .site {
@@ -381,7 +381,7 @@ li::marker {
   }
 }
 @media (max-width: 640px) {
-  body { font-size: 17px; }
+  body { font-size: 16px; }
   .site { width: min(calc(100% - 30px), var(--page-width)); margin-top: 28px; }
   .main-navigation { justify-content: flex-start; gap: 9px 18px; margin-bottom: 38px; }
 }
