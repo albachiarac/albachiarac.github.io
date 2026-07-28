@@ -173,54 +173,41 @@ p {
 
 
 .event-list {
+  --picture-width: 130px;
+  --event-gap: 20px;
+
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
 .event-list li {
-  display: flex;
-  align-items: flex-start;
-  gap: 20px;
+  display: grid;
+  grid-template-columns: var(--picture-width) minmax(0, 1fr);
+  column-gap: var(--event-gap);
+  align-items: start;
 
   margin-bottom: 28px;
   padding: 0;
-
-  border: none !important;
-  border-radius: 0;
+  border: 0 !important;
   box-shadow: none;
-  outline: none;
 }
 
 .event-list img {
   display: block;
-
-  width: 110px;
-  height: 150px;
-  flex: 0 0 110px;
+  width: var(--picture-width);
+  height: 170px;
 
   object-fit: contain;
-  object-position: center;
+  object-position: top center;
 
-  /* Matches the page instead of showing a grey rectangle */
-  background: var(--background);
-
-  border: none;
+  background: transparent;
+  border: 0;
   border-radius: 0;
-  box-shadow: none;
 }
 
-.event-list li > div {
-  flex: 1;
-  min-width: 0;
-}
-
-.event-list p {
-  margin: 0.3rem 0 0;
-}
-
-.event-list li.no-image {
-  display: block;
+.event-list li.no-image > div {
+  grid-column: 2;
 }
 
 .small {
@@ -444,15 +431,18 @@ li::marker {
   }
 }
 
-@media (max-width: 520px) {
-  .event-list li {
-    gap: 14px;
+@media (max-width: 600px) {
+  .event-list {
+    --picture-width: 105px;
+    --event-gap: 14px;
   }
 
   .event-list img {
-    width: 105px;
     height: 140px;
-    flex-basis: 105px;
+  }
+
+  .event-list li.no-image > div {
+    grid-column: 1 / -1;
   }
 }
 
