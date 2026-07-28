@@ -221,6 +221,10 @@ p {
   width: 100%;
 }
 
+.event-list li.no-image {
+  padding-left: 122px; /* 12px padding + 96px image + 14px gap */
+}
+
 .small {
   font-size: 0.9rem;
   line-height: 1.55;
