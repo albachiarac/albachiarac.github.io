@@ -173,7 +173,7 @@ p {
 
 
 .event-list {
-  --picture-width: 100px;
+  --picture-width: 90px;
   --event-gap: 20px;
 
   list-style: none;
