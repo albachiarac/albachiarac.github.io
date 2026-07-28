@@ -171,6 +171,16 @@ p {
   margin-bottom: 0.9rem;
 }
 
+.event-list {
+  list-style: none;
+  padding: 0;
+}
+
+.event-list li {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
 .small {
   font-size: 0.9rem;
   line-height: 1.55;
