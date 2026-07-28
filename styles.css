@@ -186,20 +186,25 @@ p {
   margin-bottom: 14px;
   padding: 12px;
 
-  border: 1px solid var(--line);
-  border-radius: 8px;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.event-list img {
+  width: 96px;
+  height: 96px;
+  flex: 0 0 96px;
+
+  object-fit: contain;
+  object-position: center;
+
+  border: none;
+  border-radius: 4px;
 }
 
 /* Small event thumbnails */
 
-.event-list img {
-  width: 96px;
-  height: 72px;
-  flex: 0 0 96px;
-  object-fit: contain;
-  background: #f1efe9;
-  border-radius: 6px;
-}
 
 .event-list li > div {
   flex: 1;
