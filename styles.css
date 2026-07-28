@@ -191,14 +191,13 @@ p {
 }
 
 /* Small event thumbnails */
+
 .event-list img {
   width: 96px;
   height: 72px;
   flex: 0 0 96px;
-
-  object-fit: cover;
-  object-position: center;
-
+  object-fit: contain;
+  background: #f1efe9;
   border-radius: 6px;
 }
 
