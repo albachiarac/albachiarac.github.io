@@ -212,6 +212,15 @@ p {
   font-size: 0.92rem;
   line-height: 1.45;
 }
+
+.event-list li.no-image {
+  display: block;
+}
+
+.event-list li.no-image > div {
+  width: 100%;
+}
+
 .small {
   font-size: 0.9rem;
   line-height: 1.55;
