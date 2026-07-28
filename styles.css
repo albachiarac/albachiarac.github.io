@@ -173,7 +173,7 @@ p {
 
 
 .event-list {
-  --picture-width: 130px;
+  --picture-width: 110px;
   --event-gap: 20px;
 
   list-style: none;
@@ -187,6 +187,8 @@ p {
   column-gap: var(--event-gap);
   align-items: start;
 
+font-size: 0.9rem;
+  
   margin-bottom: 28px;
   padding: 0;
   border: 0 !important;
