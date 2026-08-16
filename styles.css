@@ -61,6 +61,9 @@ body {
   line-height: 1.67;
 }
 
+.special-name {
+  font-family: Georgia, "Times New Roman", serif;
+}
 
 
 .site {
