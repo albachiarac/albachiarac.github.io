@@ -52,7 +52,6 @@ body {
   background: var(--background);
 
   font-family:
-    ui-serif,
     Georgia,
     Cambria,
     "Times New Roman",
@@ -61,6 +60,8 @@ body {
   font-size: 16px;
   line-height: 1.67;
 }
+
+
 
 .site {
   width: min(calc(100% - 48px), var(--page-width));
